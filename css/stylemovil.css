@@ -10,35 +10,48 @@
 header{
     width: 100%;
     height: 110px;
-    border-bottom: 1px solid #F2D02F;
+    border-bottom: 1px solid #FFB8D4;
     position: fixed;
     z-index: 100;
-    background: white;
+    justify-content: center;
+    text-align: center;
+    background: white;    
     top: 0;    
-           
+    left: 0;        
 }
-
-.container-header{    
+.logo{   
+    cursor: pointer;
+}
+.container-header{         
+    justify-content: center;    
     width: 100%;
     max-width: 1220px;    
     display: flex;
-    justify-content: space-between;
+    text-align: center;        
     position: relative;
-    margin: auto;
-    padding-right: 100px;
-    padding-left: 100px;
+    margin: auto;    
+    
     /*margin-right: 0px;*/
 }
-
-.container-logo-title{
-    display: flex;
-    margin-top: 5px;    
-    margin-left: 10px;  
+.contenedor-img{
+    width: 100%;
+    height: auto;
+    min-width: max-content;
+    max-width: max-content;
+    
 }
 
-.container-logo-title img{
-    width: 80px;    
-    height: 100px;    
+.container-logo-title{          
+    display: flex;
+    margin-top: 5px;    
+    margin-left: 20px;  
+    position: relative;    
+}
+
+.container-logo-title img {    
+    width: 100%;
+    height: auto;  
+    max-width: 100px;  
 }
 
 .container-logo-title h1{
@@ -47,10 +60,15 @@ header{
     margin-left: 10px;
 }
 
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 700px){	
+
+    .container-logo-title{      
+    padding-right: 200px;
+}
     .container-menu-movil{
         display: none;     
     }
@@ -58,6 +76,7 @@ header{
 .container-menu{
     /*    display: flex;*/
         margin-top: 20px;
+        margin-right:  10px;
     }
     
     .menu{
@@ -70,7 +89,7 @@ header{
         display: flex;
     }
     
-    .menu ul ,li{
+    .menu ul ,li{        
         list-style: none;
         font-size: 12px;    
         color: black;
@@ -88,8 +107,9 @@ header{
     }
     
     .menu ul  ,li:hover{
+        text-decoration: none;
         border: 1px solid #eeeeee;    
-        border-top: 4px solid #F2D02F;    
+        border-top: 4px solid #E12A80;    
         
     }
     
@@ -168,12 +188,23 @@ header{
 
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
-
+    
+  
+    header{
+        height: 90px;
+        margin-bottom: -50px;
+    }
+    .container-logo-title img {            
+        width: 100%;
+        height: auto;  
+        max-width: 80px;  
+    }
     .container-menu{        
         display: none;
     }
    
     .container-header{
+
         margin-left: -10.5px; 
         padding: 0;  
         text-align: center;      
@@ -189,8 +220,7 @@ header{
         color: #1d1f20;        
         width: max-content;        
         margin: auto;        
-        position: absolute;           
-        
+        position: absolute;                   
         max-width: auto;
         z-index: 9999;    
     }
@@ -210,7 +240,8 @@ nav #main-movil, label{
     font: 2em/1 'Oswald', sans-serif;
     padding: 0.5em;
 }
-.container-menu-movil{          
+.container-menu-movil{ 
+    padding-left: 16px;         
     margin: 0px;    
     padding-bottom: -200px;       
 }
@@ -220,7 +251,7 @@ nav #main-movil, label{
 #menu-icon:before,
 #menu-icon:after{
   
-    background: #ff8a04;
+    background: #E12A80;
     border-radius: 0.05em;
     height: 0.2em;
     transition: all 0.2s ease-in-out;    
@@ -303,7 +334,7 @@ nav #main-movil ,ul > li {
 }
 
 nav #main-movil ,ul a {        
-    color: #ffffff!important;
+    color: #525252!important;
     text-decoration: none;
 }
 
@@ -311,7 +342,7 @@ nav #main-movil ,ul a:hover {
     text-decoration: underline;
 }
 i:hover{
-    color : white;
+    color : #E12A80;
 }
 /* Social Media */
 

@@ -8,11 +8,14 @@ body{
 main{				
 	padding: 10px;				
 }
-.conten
+
 #info-title{
-	color: #E0A023;
-	margin-top: 20px;
+	color: #E12A80;
+	margin-top: -80px;
 	font-size: 5em;
+}
+#zumbido{	
+	cursor: pointer;
 }
 #zumbido{	
 	cursor: pointer;
@@ -24,14 +27,15 @@ main{
 }
 
 #img-home{	
-	margin-top: 60px;
-	width: 30%;
-	border-radius: 60%;   	
-	box-shadow: none;	 			
+	margin-top: -50px;
+	width: 40%;	
+	border-radius: 20%;   	
+	box-shadow: none;	
+	overflow: hidden; 			
 }
 
 a{
-	color:#F2D02F;
+	color: #FB009A;	
 }
 article{	
 	margin-top: 10px;	
@@ -63,7 +67,7 @@ article{
 	font-size: 3.5em;	
 }
 .color-verde{
-	color: #E0A023;
+	color: #E12A80;
 }
 .margen-derecha{
 	margin-right: 1em;
@@ -115,6 +119,14 @@ article{
 h1{
 	animation-delay: 0.5s;
 }
+li{
+
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
 h2{
 	animation-delay: 2s;
 }
@@ -135,13 +147,18 @@ h2{
 }
 
 /*	INFO CONTAINER INFORMACION NORMAL DE LA PAGINA WEB*/
-.info-container{
+.info-container{	
+	padding: 10px;
+	margin-left: -10px;
+	margin-right: -20px;
+	background-color: #F5F9F9; 
 	text-align: center;
-	 margin-top: 80px;
+	margin-top: 80px;
 }
 .img-logo{	
 	width: 9%;		
 }
+
 
 .cards-container{
 	text-align: center;
@@ -185,6 +202,7 @@ figure img{
 }	
 
 .nav-barra-inferior{
+
 	padding: 0px 0px 0px 0px;
 	text-align: center;		
 	margin-top: 10px;
@@ -223,6 +241,10 @@ figure img{
 }
 #text9{
 	display:none;
+}
+
+.info-container div p{
+	margin-top: 30px;	
 }
 /*
 .div-figure{		
@@ -303,8 +325,9 @@ span{
 /*movil///////////////////////////////////////////*/
 @media screen and (max-width: 700px){	 
 
-	#beepc{					
-		width:  10%;
+	#beepc{			
+		color: #FB009A;		
+		font-size: 2em;
 		position: fixed;		
 		bottom: 2px ;	
 		right: 7.5px;
@@ -313,22 +336,21 @@ span{
 		
 	}		
 
-	#beepc:active{			
-		position: fixed;			
+	#beepc:active{						
 		width:  10.5%;		
-		opacity: 1;				
-		
+		opacity: 1;						
 	}		
 	
-	#img-home{			
-		margin-top: 25px;	
+	#img-home{	
+		margin-top: -20px;	
 		min-width: 340px; 
 		min-height: auto;		
 		padding-left: -20px;						
 		/*box-shadow: 0px 0px 40px -5px; 	*/
 		box-shadow: none;	
 	}
-	#info-title{
+	#info-title{	
+		margin-top: -40px;
 		font-size: 3em;
 	}
 	.img-logo{
