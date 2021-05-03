@@ -150,7 +150,8 @@ h2{
 .info-container{	
 	padding: 10px;
 	margin-left: -10px;
-	margin-right: -20px;
+	margin-right: -10px;
+	overflow: hidden;
 	background-color: #F5F9F9; 
 	text-align: center;
 	margin-top: 80px;
