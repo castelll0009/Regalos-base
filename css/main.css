@@ -5,7 +5,11 @@ body{
 	-webkit-user-select: none;
 	
 }
-main{				
+main{	
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;			
 	padding: 10px;				
 }
 
@@ -119,13 +123,6 @@ article{
 h1{
 	animation-delay: 0.5s;
 }
-li{
-
-    text-decoration: none;
-}
-a{
-    text-decoration: none;
-}
 
 h2{
 	animation-delay: 2s;
@@ -150,7 +147,8 @@ h2{
 .info-container{	
 	padding: 10px;
 	margin-left: -10px;
-	margin-right: -20px;
+	margin-right: -10px;
+	overflow: hidden;
 	background-color: #F5F9F9; 
 	text-align: center;
 	margin-top: 80px;
