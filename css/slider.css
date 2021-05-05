@@ -61,6 +61,8 @@
         z-index: 1000;
       }    
       .tarjeta-info{
+        text-align: left;
+        padding-left: 15px;
         color: white;
         border-radius: 20px;
         padding-top:  10px;
@@ -84,10 +86,13 @@
         opacity: 0;
       }
       .orden{       
-      color: black; 
+         color: black; 
         background: white;
         z-index: 3;
       }   
+      .oden input{
+        border: solid 1px grey;
+      }
 /*//////////////////////////////////MOVIL/////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
