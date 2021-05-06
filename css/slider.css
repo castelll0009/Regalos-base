@@ -1,14 +1,21 @@
-.contenedor-todo-swiper{
+.contenedor-swiper-tarjetas{  
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  display: block;
+}
+.contenedor-todo-swiper{    
+  width: 100%;  
+  background: purple;  
+  border: solid 5px rgb(84, 1, 111);
   background: #eee;        
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
-  padding: 0;
-  width: 100%;
+  padding: 0;  
   max-height: max-content;
-  position: relative;
-
+  position: relative;   
 }
 
 .swiper-container {
@@ -17,14 +24,9 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  /*display: none;*/
+  display: block;
 }
-.div-figure img{
-  display: none;
-}  
-.div-figure p{
-  display: none;
-}      
+     
 .swiper-wrapper{
   max-width: 10px;
   max-height: max-content;        
@@ -36,9 +38,7 @@
 
 .swiper-slide {    
   text-align: center;
-  font-size: 18px;        
-  background: transparent
-
+  font-size: 18px;          
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,6 +68,12 @@
   background: white;
   z-index: 1000;
 }    
+.contenedor-tarjetas-info{
+  width: 100%;
+  background: red;
+  position: relative;
+  border: solid 5px pink;
+}
 .tarjeta-info{
   transition: all 400ms;
   width: 100%;
@@ -149,8 +155,8 @@
   height: 80px;
   max-height: 80px;
 }
-.dynamic-background{
-    
+.entrar-detalles{
+
 }
 /*//////////////////////////////////MOVIL///////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////////////MOVIL//////////////////////////////////////////////////////////////////////////////*/

@@ -169,16 +169,15 @@ h2{
 	flex-direction: row;		
 	flex-wrap: wrap;		
 	position: relative;
-
   }
 
-.figure-container{
+.figure-container{		
 	overflow: hidden;
 	position: relative;			
 }
 
 
-figure{
+figure{		
 	overflow: hidden;
 	outline: none;
 	cursor:pointer;
@@ -196,6 +195,10 @@ figure{
 	padding-top: 20px;	
 	padding: 0px;	
 
+}
+figure{	
+	min-height: max-content;	
+	max-height: max-content;	
 }
 
 figure img{	
@@ -252,28 +255,15 @@ figure img{
 .info-container div p{
 	margin-top: 30px;	
 }
-/*
-.div-figure{		
-	z-index: 10;	
-	border-radius: 20px;		
-	max-height: 300px;
-	overflow: hidden;
-	padding-bottom: 20px;
-	margin-left: -10px;	
-	padding: 0px 5px;				
-	transition-duration: all 300s ;
-
-} 
-*/
-/*
-.div-figure:hover{
-	background-color: rgb(216, 216, 216);		
-	position: relative;
-	max-height: max-content;		
-	padding-bottom: 20px;
-	box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);	
+.desaparecer-contenedor{
+	display: none;
+	opacity: 0;
 }
-*/
+.aparecer-contenedor{
+	display: block;
+	opacity: 1;
+}
+	
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
@@ -293,7 +283,7 @@ span{
 		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);				
 	}	
 
-	.div-figure{	
+	.div-figure{			
 		transition: all 300ms;					
 		overflow: hidden;
 		margin-top: -15px;
