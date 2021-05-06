@@ -174,12 +174,11 @@ h2{
 
 .figure-container{
 	overflow: hidden;
-	position: relative;	
+	position: relative;			
 }
 
 
 figure{
-
 	overflow: hidden;
 	outline: none;
 	cursor:pointer;
@@ -187,7 +186,8 @@ figure{
 	position: relative;
 	min-width: 320px;	
 	max-width: 320px;		
-	max-height: max-content;	
+	min-height: 468px;	
+	max-height: 600px;	
 	margin: 10px;
 	background-color: rgb(219, 216, 216);
 	border-radius: 20px;
