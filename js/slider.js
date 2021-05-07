@@ -23,8 +23,8 @@ var tarjet_orden_h4 = document.querySelector(".h4-orden");
 var paginacion = document.querySelector(".swiper-pagination-progressbar-fill");
 
 /*var entrar_detalles = document.querySelector(".entrar-detalles");*/
-var div_figure = document.querySelector(".div-figure");
-var contenedor_swiper_tarjetas = document.querySelector(".contenedor-swiper-tarjetas");
+var div_figures = document.querySelectorAll(".div-figure");
+var contenedor_swiper_tarjetas = document.querySelectorAll(".contenedor-swiper-tarjetas");
 
 /*ADD EVENTS LISTENER ESCUCHADORES*/
 tarjet_about.addEventListener("click", function(){  
@@ -56,45 +56,34 @@ var entrar_detalles = document.getElementsByClassName("entrar-detalles");
         entrar_detalles[i].addEventListener("click",function() {
           //TODO funcion que identifique le div  figure que se desea editar 
           // ta,mbien el contenedor swiper de  tarjetas, con el fin de crear una funcion generica
-          div_figure.classList.toggle("desaparecer-contenedor"); 
-          contenedor_swiper_tarjetas.classList.toggle("aparecer-contenedor");  
+          if(this.innerHTML == "Anchetas")//En este caso alertaremos el texto del cliqueado          
+          {                        
+            div_figures[0].classList.toggle("desaparecer-contenedor");
+            contenedor_swiper_tarjetas[0].classList.toggle("aparecer-contenedor")            
+          }
+          if(this.innerHTML == "Meriendas")//En este caso alertaremos el texto del cliqueado          
+          {                        
+            div_figures[1].classList.toggle("desaparecer-contenedor");
+            contenedor_swiper_tarjetas[1].classList.toggle("aparecer-contenedor")            
+          }
+          /*ocultarDesplegarProductos();*/               
+          
         });
     }
 
- /**///////LIstener para objetos con una misma class/////*/
-//Seleccionas todos los elementos con clase test
-/*
-var entrar_detalles = document.getElementsByClassName("entrar-detalles");
-/*var div_figures = document.getElementsByClassName("div-figure");*/
-/*
-var abouts = document.getElementsByClassName("about");
-var about_ps = document.getElementsByClassName("p-about");
-var div_figure = document.querySelectorAll(".div-figure");
-var contenedor_swiper_tarjetas = document.querySelectorAll(".contenedor-swiper-tarjetas");
-//Recorres la lista de elementos seleccionados
-for (var i=0; entrar_detalles.length; i++) {
-  //Añades un evento a cada elemento
-  entrar_detalles[i].addEventListener("click",function() {
-     //Aquí la función que se ejecutará cuando se dispare el evento
-     alert(this.innerHTML); //En este caso alertaremos el texto del cliqueado
-     alert(i);
-    //Recorres la lista de elementos seleccionados
+    /*
+  var div_figures = document.querySelectorAll("div-figure");
 
-    div_figure[i].classList.toggle("aparecer-contenedor");  
-    contenedor_swiper_tarjetas[i].classList.toggle("aparecer-contenedor");  
-    /*contenedor_swiper_tarjetas.classList.toggle("aparecer-contenedor"); */
-   /* for (var i=0; abouts.length; i++) {
-      //Añades un evento a cada elemento      
-        //Aquí la función que se ejecutará cuando se dispare el evento        
-          abouts[i].classList.toggle("desplegar-tarjeta-info");
-/*          about_p.style[i]="opacity : 1; display : block;";  */
-        /*about.classList.toggle("desplegar-tarjeta-info");  */
-        /*about_p.style ="opacity : 1; display : block;";  */
-     /* }    */
-  /*});
-  */
-/*}
+    function ocultarDesplegarProductos(){
+      for (let i = 0; i < div_figures.length; i++) {
+        const element = div_figure[i];
+        
+      }
+      // identificar div figure
+      
+    }
 */
+
 paginacion_blanca();
 
 /*funciiones */
