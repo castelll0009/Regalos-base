@@ -54,6 +54,8 @@ var entrar_detalles = document.getElementsByClassName("entrar-detalles");
     for (var i=0; i< entrar_detalles.length; i++) {
         //Añades un evento a cada elemento
         entrar_detalles[i].addEventListener("click",function() {
+          //TODO funcion que identifique le div  figure que se desea editar 
+          // ta,mbien el contenedor swiper de  tarjetas, con el fin de crear una funcion generica
           div_figure.classList.toggle("desaparecer-contenedor"); 
           contenedor_swiper_tarjetas.classList.toggle("aparecer-contenedor");  
         });
