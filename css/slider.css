@@ -2,19 +2,18 @@
   position: relative;
   width: 100%;
   bottom: 0;
-  display: block;
+  display: none;
 }
 .contenedor-todo-swiper{    
-  width: 100%;  
-  background: purple;  
-  border: solid 5px rgb(84, 1, 111);
+  width: 100%;      
   background: #eee;        
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;  
-  max-height: max-content;
+  min-height: 450px;
+  max-height: max-content;  
   position: relative;   
 }
 
@@ -69,10 +68,8 @@
   z-index: 1000;
 }    
 .contenedor-tarjetas-info{
-  width: 100%;
-  background: red;
-  position: relative;
-  border: solid 5px pink;
+  width: 100%;  
+  position: relative;  
 }
 .tarjeta-info{
   transition: all 400ms;
