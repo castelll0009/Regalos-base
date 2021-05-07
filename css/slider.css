@@ -1,10 +1,14 @@
 .contenedor-swiper-tarjetas{  
-  position: relative;
+  transition: all 1s;
+  position: absolute;
   width: 100%;
   bottom: 0;
-  display: none;
+  opacity: 0;
+  display: block;
+  z-index: -1;
 }
-.contenedor-todo-swiper{    
+.contenedor-todo-swiper{     
+  transition: all 1s;
   width: 100%;      
   background: #eee;        
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -39,10 +43,12 @@
   text-align: center;
   font-size: 18px;          
   /* Center slide text vertically */
+  /*
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  */
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -52,9 +58,18 @@
   -webkit-align-items: center;
   align-items: center;
 }
-
+.swiper-slide h5{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  font-weight: 500;   
+  font-size:  1.2em;
+  padding-top: 15px;
+}
 .swiper-slide img {            
-  padding: 50px;
+  padding: 2px -2px 200px -2px;
+  margin-bottom: 98px;
   display: block;
   width: 100%;
   height: 100%;        
@@ -68,6 +83,7 @@
   z-index: 1000;
 }    
 .contenedor-tarjetas-info{
+  transition: all 1s;
   width: 100%;  
   position: relative;  
 }
@@ -83,10 +99,13 @@
   padding-top:  10px;
   padding-bottom:  10px;          
   bottom: 0;
-  cursor: pointer;
+  cursor: pointer;  
   /*display:none;*/
-
 }          
+.tarjeta-info h4{
+  font-size: 1.2em;
+  font-weight: 400;
+}
 .about{        
   background: #DD242C;
   z-index: 1;
@@ -123,13 +142,11 @@
   height: 40px;
   max-height: 420px;      
 }   
-.orden h4{       
-  transition: all 2s;         
-  padding-bottom:  12px;
+.orden h4{           
+  padding-bottom:  8px;
   border-bottom: solid 1px black;     
 }
-.orden button{
-  margin-top: 10px;
+.orden button{  
   margin-bottom:  10px;
   opacity: 0;         
   opacity: 1;
@@ -137,8 +154,7 @@
   opacity: 1;        
 }
 .orden select{ 
-  float: right;        
-  margin-top: 10px;
+  float: right;          
   margin-bottom:  10px;
   border: solid 1px grey;        
   opacity: 1;                
@@ -149,8 +165,8 @@
   max-height: 400px;
 }
 .desplegar-tarjeta-orden{
-  height: 80px;
-  max-height: 80px;
+  height: 85px;
+  max-height: 85px;
 }
 .entrar-detalles{
 

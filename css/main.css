@@ -169,6 +169,7 @@ h2{
 	flex-direction: row;		
 	flex-wrap: wrap;		
 	position: relative;
+
   }
 
 .figure-container{		
@@ -176,8 +177,7 @@ h2{
 	position: relative;			
 }
 
-
-figure{		
+figure{
 	overflow: hidden;
 	outline: none;
 	cursor:pointer;
@@ -185,7 +185,7 @@ figure{
 	position: relative;
 	min-width: 320px;	
 	max-width: 320px;		
-	min-height: 468px;	
+	min-height: 200px;	
 	max-height: 600px;	
 	margin: 10px;
 	background-color: rgb(219, 216, 216);
@@ -195,10 +195,6 @@ figure{
 	padding-top: 20px;	
 	padding: 0px;	
 
-}
-figure{	
-	min-height: max-content;	
-	max-height: max-content;	
 }
 
 figure img{	
@@ -258,12 +254,26 @@ figure img{
 .desaparecer-contenedor{
 	display: none;
 	opacity: 0;
+	
 }
-.aparecer-contenedor{
+.aparecer-contenedor{	
+	position: relative;
+	z-index: 1;
 	display: block;
 	opacity: 1;
 }
-	
+
+.div-figure{						
+	overflow: hidden;
+	margin-top: -15px;
+	padding: 10px;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	margin-left: -10px;		
+	background-color: rgb(219, 216, 216);		
+	border-radius: 20px;	
+	z-index: 0;
+}
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
@@ -283,8 +293,7 @@ span{
 		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);				
 	}	
 
-	.div-figure{			
-		transition: all 300ms;					
+	.div-figure{					
 		overflow: hidden;
 		margin-top: -15px;
 		padding: 10px;
@@ -297,7 +306,7 @@ span{
 	}
 	
 	
-		.div-figure:hover{				
+	.div-figure:hover{				
 		background-color: rgb(219, 216, 216);
 		margin-top: -15px;
 		padding: 10px;
@@ -353,7 +362,7 @@ span{
 		width: 20%;		
 	}
 
-	.cards-container{		
+	.cards-container{			
 		width: 100%;		
 	}	
 	
