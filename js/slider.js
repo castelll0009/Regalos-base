@@ -41,12 +41,6 @@ tarjet_orden.addEventListener("click", function(){
   tarjet_orden.classList.toggle("desplegar-tarjeta-orden");    
 });
 
-/*
-entrar_detalles.addEventListener("click", function(){  
-  div_figure.classList.toggle("desaparecer-contenedor"); 
-  contenedor_swiper_tarjetas.classList.toggle("aparecer-contenedor");  
-});
-*/
 //Seleccionas todos los elementos con clase test
 var entrar_detalles = document.getElementsByClassName("entrar-detalles");
     
@@ -65,6 +59,21 @@ var entrar_detalles = document.getElementsByClassName("entrar-detalles");
           {                        
             div_figures[1].classList.toggle("desaparecer-contenedor");
             contenedor_swiper_tarjetas[1].classList.toggle("aparecer-contenedor")            
+          }
+          if(this.innerHTML == "Desayunos sorpresa")//En este caso alertaremos el texto del cliqueado          
+          {                        
+            div_figures[2].classList.toggle("desaparecer-contenedor");
+            contenedor_swiper_tarjetas[2].classList.toggle("aparecer-contenedor")            
+          }
+          if(this.innerHTML == "Arreglos florales")//En este caso alertaremos el texto del cliqueado          
+          {                        
+            div_figures[3].classList.toggle("desaparecer-contenedor");
+            contenedor_swiper_tarjetas[3].classList.toggle("aparecer-contenedor")            
+          }
+          if(this.innerHTML == "Bandejas")//En este caso alertaremos el texto del cliqueado          
+          {                        
+            div_figures[4].classList.toggle("desaparecer-contenedor");
+            contenedor_swiper_tarjetas[4].classList.toggle("aparecer-contenedor")            
           }
           /*ocultarDesplegarProductos();*/               
           
