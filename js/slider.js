@@ -22,7 +22,6 @@ var tarjet_orden_h4 = document.querySelector(".h4-orden");
 
 var paginacion = document.querySelector(".swiper-pagination-progressbar-fill");
 
-/*var entrar_detalles = document.querySelector(".entrar-detalles");*/
 var div_figures = document.querySelectorAll(".div-figure");
 var contenedor_swiper_tarjetas = document.querySelectorAll(".contenedor-swiper-tarjetas");
 
@@ -41,8 +40,16 @@ tarjet_orden.addEventListener("click", function(){
   tarjet_orden.classList.toggle("desplegar-tarjeta-orden");    
 });
 
+
+//listener DELEGACION de envetyos
+/*
+const div_figures = document.querySelectorAll(".entrar-detalles");
+
+div_figures.forEach(div_figure => {
+    div_figure.addEventListener('click', () => console.log('Clicked!'));
+});*/
 //Seleccionas todos los elementos con clase test
-var entrar_detalles = document.getElementsByClassName("entrar-detalles");
+var entrar_detalles = document.querySelectorAll(".entrar-detalles");
     
     //Recorres la lista de elementos seleccionados
     for (var i=0; i< entrar_detalles.length; i++) {
