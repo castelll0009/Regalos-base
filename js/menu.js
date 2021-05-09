@@ -8,13 +8,14 @@ function buzzing() {
 }		
 
 var zoom = false;
-function vistaEscritorio(){	
+function vistaEscritorio(){		
 	if(zoom == false){
-		document.body.style = "zoom: 45%";		
-
+		document.body.style = "zoom: 51%";	
+		beepc.style ="font-size: 4em";
 		zoom = true;
 	}else{
-		document.body.style = "zoom: 100%";
+		document.body.style = "zoom: 100%";		
+		beepc.style ="font-size: 2em";		
 		zoom = false;
 	}		
 }

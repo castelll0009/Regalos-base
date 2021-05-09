@@ -192,9 +192,13 @@ figure{
 	border-width: 200px;
 	padding: 10px;
 	padding-top: 20px;	
-	padding: 0px;	
-	
+	padding: 0px;		
+}
 
+figure h1{
+	font-size: 32px;
+	padding-top: 10px;
+	padding-bottom: 3.7px;
 }
 
 figure img{	
@@ -323,7 +327,8 @@ span{
 
 	#beepc{	
 		display: none;				
-	}	
+	}		
+	
 	
 }
 /*movil///////////////////////////////////////////*/
@@ -339,13 +344,13 @@ span{
 		opacity: 0.5;		
 		z-index: 30;
 		
-	}		
+	}	
 
 	#beepc:active{						
 		width:  10.5%;		
 		opacity: 1;						
 	}		
-	
+
 	#img-home{	
 		margin-top: -20px;	
 		min-width: 340px; 
@@ -363,7 +368,8 @@ span{
 	}
 
 	.cards-container{			
-		width: 100%;		
+		width: 100%;	
+		padding: 0;	
 	}	
 	
 	figure:hover{			
