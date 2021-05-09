@@ -1,6 +1,7 @@
 var sound = document.getElementById("buzz");
 var btn = document.getElementById("zumbido");	
 var beepc = document.querySelector("#beepc");
+var btn_detalles = document.querySelector("#btn-detalles");
 
 
 function buzzing() {					
@@ -11,10 +12,12 @@ var zoom = false;
 function vistaEscritorio(){		
 	if(zoom == false){
 		document.body.style = "zoom: 51%";	
-		beepc.style ="font-size: 4em";
+		btn_detalles.style ="font-size: 4em; bottom: 95px;";		
+		beepc.style ="font-size: 4em";		
 		zoom = true;
 	}else{
 		document.body.style = "zoom: 100%";		
+		btn_detalles.style ="font-size: 2em";
 		beepc.style ="font-size: 2em";		
 		zoom = false;
 	}		
