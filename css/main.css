@@ -168,8 +168,7 @@ h2{
 	display: flex;	
 	flex-direction: row;		
 	flex-wrap: wrap;		
-	position: relative;
-
+	position: relative;	
   }
 
 .figure-container{		
@@ -194,6 +193,7 @@ figure{
 	padding: 10px;
 	padding-top: 20px;	
 	padding: 0px;	
+	
 
 }
 
