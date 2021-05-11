@@ -172,6 +172,7 @@ h2{
   }
 
 .figure-container{		
+	max-height: 510px;
 	overflow: hidden;
 	position: relative;			
 }
@@ -292,23 +293,30 @@ figure img{
 	
 	opacity: 1;								
 }	
-/*///////////////////////////////////////////////////////////////////*/
-/*///////////////////////////////////////////////////////////////////*/
-/*///////////////////////////////////////////////////////////////////*/
-/*///////////////////////////////////////////////////////////////////*/
-/*///////////////////////////////////////////////////////////////////*/
 span{
 	font-size: 16px;
 }
 
+/*///////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 700px){	
+	.figure-container{	
+		min-width: 420px;	
+		min-height: max-content;		
+		max-height: 590px;
+		overflow: hidden;
+		position: relative;			
+	}
 	figure{
 		position: relative;
 	}
 	
 	figure:hover{		
 		z-index: 1;				
-		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);				
+		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);							
 	}	
 
 	.div-figure{					
@@ -320,7 +328,7 @@ span{
 		margin-left: -10px;		
 		background-color: rgb(219, 216, 216);		
 		border-radius: 20px;	
-		z-index: 0;
+		z-index: 0;				
 	}
 	
 	
@@ -330,7 +338,7 @@ span{
 		padding: 10px;
 		padding-top: 15px;
 		padding-bottom: 0px;
-		margin-left: -10px;					
+		margin-left: -10px;			
 		max-height: max-content;							
 		/*
 		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);	*/
