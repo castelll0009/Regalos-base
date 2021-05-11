@@ -306,7 +306,7 @@ span{
 	.figure-container{	
 		min-width: 420px;	
 		min-height: max-content;		
-		max-height: 590px;
+		max-height: 710px;
 		overflow: hidden;
 		position: relative;			
 	}
