@@ -61,6 +61,8 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  max-height: 600px;
+  min-height: 600px;
 }
 .swiper-slide h5{
   position: absolute;  
@@ -183,6 +185,11 @@
 /*//////////////////////////////////MOVIL//////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////////////MOVIL/////////////////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 700px){  
+  .swiper-slide {   
+    max-height: 400px;
+    min-height: 400px;
+  }
+
   .swiper-button-next::after{
     display: none;
   }
