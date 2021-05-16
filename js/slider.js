@@ -11,8 +11,7 @@ var swiper = new Swiper(".mySwiper", {
       });
 
       /*variables */
-
-var paginacion = document.querySelector(".swiper-pagination-progressbar-fill");
+      
 var tarjet_about = document.querySelectorAll(".about");
 var tarjet_contenido = document.querySelectorAll(".contenido");
 var tarjet_orden  = document.querySelectorAll(".orden");
@@ -48,24 +47,24 @@ var contenedor_swiper_tarjetas = document.querySelectorAll(".contenedor-swiper-t
 
 var entrar_detalles = document.querySelectorAll(".entrar-detalles");
 
-
 entrar_detalles.forEach( (detalle,index) => {  
   detalle.addEventListener("click", function(){          
 
      if(index == 0 || index== 1 )//En este caso alertaremos el texto del cliqueado          
       {                        
             div_figures[0].classList.toggle("desaparecer-contenedor");
-            contenedor_swiper_tarjetas[0].classList.toggle("aparecer-contenedor")            
+            contenedor_swiper_tarjetas[0].classList.toggle("aparecer-contenedor")    
+   
       }
       if(index == 2 || index== 3 )//En este caso alertaremos el texto del cliqueado          
       {                        
             div_figures[1].classList.toggle("desaparecer-contenedor");
-            contenedor_swiper_tarjetas[1].classList.toggle("aparecer-contenedor")            
+            contenedor_swiper_tarjetas[1].classList.toggle("aparecer-contenedor") ;                
       }
       if(index == 4 || index== 5 )//En este caso alertaremos el texto del cliqueado          
       {                        
             div_figures[2].classList.toggle("desaparecer-contenedor");
-            contenedor_swiper_tarjetas[2].classList.toggle("aparecer-contenedor")            
+            contenedor_swiper_tarjetas[2].classList.toggle("aparecer-contenedor")  ;          
       }
       if(index == 6 || index== 7 )//En este caso alertaremos el texto del cliqueado          
       {                        
@@ -96,14 +95,6 @@ function desplegarItems(){
 }
 
 
-paginacion_blanca();
-
-
-
-/*funciiones */
-function paginacion_blanca(argument) {    
-    paginacion.style = "background: white";
-}
 
 
 

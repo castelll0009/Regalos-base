@@ -87,11 +87,19 @@
 /* .swiper-pagination span{
   background: white;
 } */
+
+/*liniesita blanca*/
 .swiper-pagination-progressbar-fill{
-  background: #392823;
-  z-index: 1000;
-  display: block;  
-}    
+  background: #ffffff;
+  z-index: 1000;  
+  --swiper-theme-color: white;
+} 
+.swiper-button-prev{
+  --swiper-theme-color: white;
+}   
+.swiper-button-next{
+  --swiper-theme-color: white;
+}
 .contenedor-tarjetas-info{
   transition: all 1s;
   width: 100%;  
@@ -178,9 +186,7 @@
   height: 85px;
   max-height: 85px;
 }
-.entrar-detalles{
 
-}
 /*//////////////////////////////////MOVIL///////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////////////MOVIL//////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////////////MOVIL/////////////////////////////////////////////////////////////////////////////*/
