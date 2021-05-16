@@ -90,7 +90,7 @@
 .swiper-pagination-progressbar-fill{
   background: #392823;
   z-index: 1000;
-  display: none;
+  display: block;  
 }    
 .contenedor-tarjetas-info{
   transition: all 1s;
