@@ -10,7 +10,6 @@ var swiper = new Swiper(".mySwiper", {
         },        
       });
 
-      /*variables */
       
 var tarjet_about = document.querySelectorAll(".about");
 var tarjet_contenido = document.querySelectorAll(".contenido");
