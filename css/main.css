@@ -2,8 +2,7 @@ body{
 	font-family: 'Kaushan Script', cursive;
 	font-family: 'Lato', sans-serif;
 	font-family: 'Zilla Slab', serif;
-	-webkit-user-select: none;
-	
+	-webkit-user-select: none;	
 }
 main{				
 	padding: 10px;				
@@ -306,12 +305,12 @@ span{
 	.figure-container{	
 		min-width: 420px;	
 		min-height: max-content;		
-		max-height: 710px;
+		max-height: 710px;	
 		overflow: hidden;
 		position: relative;			
 	}
 	figure{
-		position: relative;
+		position: relative;		
 	}
 	
 	figure:hover{		
@@ -411,34 +410,6 @@ span{
 	figure:hover{			
 		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);				
 	}
-	
-/*
-	.div-figure:hover{
-		background-color: rgb(216, 216, 216);		
-		position: relative;
-		max-height: max-content;		
-		padding-bottom: 20px;
-		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);	
-	}
-	*/
-	/* completo con sombra
-	.div-figure:hover{		
-		background-color: rgb(216, 216, 216);		
-		position: absolute;
-		max-height: max-content;
-		overflow: visible;
-		padding-bottom: 20px;
-		box-shadow: 2px 2px 4px #bbbab8, 10px 10px 10px rgb(141, 141, 141);		
-	}
-*/
-	/*
-	.div-figure{		
-		max-height: 250px;
-		overflow: hidden;
-		position: relative;
-		padding-bottom: 20px;
-	}
-	*/
 
 	
 	figure img{	
