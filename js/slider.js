@@ -159,7 +159,8 @@ var precio_producto_vender;
 var descripcion_producto_vender;
 var TOTAL_PAGAR_producto_vender;
 //variables para crear URL y enviar pedido a Whatsapp
-var numero_telefono = 573202486769;
+/*var numero_telefono = 573202486769;*/
+var numero_telefono = 573224338473;
 var URL_orden = window.location;
 var cadenaURL = "";
 botones_comprar.forEach( (boton, index) => {  
