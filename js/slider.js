@@ -159,9 +159,11 @@ var precio_producto_vender;
 var descripcion_producto_vender;
 var TOTAL_PAGAR_producto_vender;
 //variables para crear URL y enviar pedido a Whatsapp
+/*
 var numero_telefono = 573202486769;
 var URL_orden = window.location;
 var cadenaURL = "";
+*/
 
 var numero_telefono2 = 573224338473;
 var URL_orden2 = window.location;
@@ -224,9 +226,11 @@ botones_comprar.forEach( (boton, index) => {
     alert(TOTAL_PAGAR_producto_vender);
     */
     /*ANCHETAS:dulce y licor PRECIO:$60000 DESCRIPCION:quiero que diga te amo ma CANTIDAD:2 TOTAL A PAGAR:$120000    ->>Pendiente de envio comprobante de pago<<- */
+    /*
     cadenaURL = "https://wa.me/"+numero_telefono+"?text=💝💝💝🦄🦄🦄%0AUNI-STORE (PEDIDO ONLINE)%0A🦄🦄🦄💝💝💝%0A%0A"+titulo_producto_vender+": "+variante_selecionada_producto_vender+"%0APRECIO:$ "+precio_producto_vender+"%0ADESCRIPCIÓN:"+
     descripcion_producto_vender+"%0ACANTIDAD: "+cantidad_producto_vender+"%0ATOTAL%20A%20PAGAR>>$ "+TOTAL_PAGAR_producto_vender+"%0A%0A->>Pendiente de envio comprobante de pago<<-";
     URL_orden =  window.location= cadenaURL;        
+    */
 
     cadenaURL2 = "https://wa.me/"+numero_telefono2+"?text=💝💝💝🦄🦄🦄%0AUNI-STORE (PEDIDO ONLINE)%0A🦄🦄🦄💝💝💝%0A%0A"+titulo_producto_vender+": "+variante_selecionada_producto_vender+"%0APRECIO:$ "+precio_producto_vender+"%0ADESCRIPCIÓN:"+
     descripcion_producto_vender+"%0ACANTIDAD: "+cantidad_producto_vender+"%0ATOTAL%20A%20PAGAR>>$ "+TOTAL_PAGAR_producto_vender+"%0A%0A->>Pendiente de envio comprobante de pago<<-";    
