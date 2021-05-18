@@ -176,9 +176,9 @@
 									</p>
 								</div>
 								<div class="tarjeta-info contenido">
-									<h4>Contenido</h4> 	
+									<h4>Contenido</h4> 										
+									<img src="imgs/anchetas-contenido.png" >				
 									<h6>Personalizable</h6>	
-									<img src="imgs/anchetas-contenido-2.png" >				
 									<div class="contenido-personalizable">										
 										<h7>Tipo de ancheta:</h7>
 										<select name="select" id="select-tipo-ancheta" onclick="accionSelect();" >
@@ -192,8 +192,14 @@
 								</div>
 								<div class="tarjeta-info orden">
 									<h4 class="h4-orden">Orden</h4> 
-									<button id="btn-comprar">comprar</button>
-									<select>1</select>						
+									<div class="cantidad-unidades">	
+										<button class="btn-comprar">comprar</button>	
+										<span class="span-cantidad">
+											<button id="disminuir" class="botones-unidades disminuir" onclick="disminuir()">-</button>
+											<input type="text" class="cantidad" value="1">
+											<button id="aumentar" class="botones-unidades" onclick="aumentar()">+</button>																															
+										</span>																				
+									</div>						
 								</div>
 						</div>
 					</div>										
@@ -264,16 +270,28 @@
 							   </div>
 							   <div class="tarjeta-info contenido">
 								   <h4>Contenido</h4> 						
-								   <p class="p-contenido">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								   consequat. Duis, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,					
-								   </p>
+								   <h6>Personalizable</h6>	
+									<div class="contenido-personalizable">										
+										<h7>Tipo de ancheta:</h7>
+										<select name="select" id="select-tipo-ancheta" onclick="accionSelect();" >
+											<option value="1">dulce</option>
+											<option value="2">dulce y licor</option>
+											<option value="3">saludable</option>
+										</select>	
+										  <h7>Descripción:</h7>										 
+										  <input onclick="accionDescripcion();" type="descripcion" id="input-descripcion" name="descripcion" placeholder="Me gustaria que tuviera..">
+									</div>
 							   </div>
 							   <div class="tarjeta-info orden">
 								   <h4 class="h4-orden">Orden</h4> 
-								   <button>comprar</button>
-								   <select>1</select>						
+								   <div class="cantidad-unidades">	
+									<button class="btn-comprar">comprar</button>	
+									<span class="span-cantidad">
+										<button id="disminuir" class="botones-unidades disminuir" onclick="disminuir()">-</button>
+										<input type="text" class="cantidad"  value="1">
+										<button id="aumentar" class="botones-unidades" onclick="aumentar()">+</button>																															
+									</span>																				
+								</div>							
 							   </div>
 					   </div>
 				   </div>	
@@ -345,16 +363,28 @@
 							   </div>
 							   <div class="tarjeta-info contenido">
 								   <h4>Contenido</h4> 						
-								   <p class="p-contenido">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								   consequat. Duis, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,					
-								   </p>
+								   <h6>Personalizable</h6>	
+									<div class="contenido-personalizable">										
+										<h7>Tipo de ancheta:</h7>
+										<select name="select" id="select-tipo-ancheta" onclick="accionSelect();" >
+											<option value="1">dulce</option>
+											<option value="2">dulce y licor</option>
+											<option value="3">saludable</option>
+										</select>	
+										  <h7>Descripción:</h7>										 
+										  <input onclick="accionDescripcion();" type="descripcion" id="input-descripcion" name="descripcion" placeholder="Me gustaria que tuviera..">
+									</div>
 							   </div>
 							   <div class="tarjeta-info orden">
 								   <h4 class="h4-orden">Orden</h4> 
-								   <button>comprar</button>
-								   <select>1</select>						
+								   <div class="cantidad-unidades">	
+									<button class="btn-comprar">comprar</button>	
+									<span class="span-cantidad">
+										<button id="disminuir" class="botones-unidades disminuir" onclick="disminuir()">-</button>
+										<input type="text" class="cantidad" value="1">
+										<button id="aumentar" class="botones-unidades" onclick="aumentar()">+</button>																															
+									</span>																				
+								</div>								
 							   </div>
 					   </div>
 				   </div>	
@@ -414,16 +444,28 @@
 							   </div>
 							   <div class="tarjeta-info contenido">
 								   <h4>Contenido</h4> 						
-								   <p class="p-contenido">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								   consequat. Duis, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,					
-								   </p>
+								   <h6>Personalizable</h6>	
+								   <div class="contenido-personalizable">										
+									   <h7>Tipo de ancheta:</h7>
+									   <select name="select" id="select-tipo-ancheta" onclick="accionSelect();" >
+										   <option value="1">dulce</option>
+										   <option value="2">dulce y licor</option>
+										   <option value="3">saludable</option>
+									   </select>	
+										 <h7>Descripción:</h7>										 
+										 <input onclick="accionDescripcion();" type="descripcion" id="input-descripcion" name="descripcion" placeholder="Me gustaria que tuviera..">
+								   </div>
 							   </div>
 							   <div class="tarjeta-info orden">
 								   <h4 class="h4-orden">Orden</h4> 
-								   <button>comprar</button>
-								   <select>1</select>						
+								   <div class="cantidad-unidades">	
+									<button class="btn-comprar">comprar</button>	
+									<span class="span-cantidad">
+										<button id="disminuir" class="botones-unidades disminuir" onclick="disminuir()">-</button>
+										<input type="text" class="cantidad" value="1">
+										<button id="aumentar" class="botones-unidades" onclick="aumentar()">+</button>																															
+									</span>																				
+								</div>							
 							   </div>
 					   </div>
 				   </div>	
@@ -490,16 +532,29 @@
 							   </div>
 							   <div class="tarjeta-info contenido">
 								   <h4>Contenido</h4> 						
-								   <p class="p-contenido">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								   consequat. Duis, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,					
-								   </p>
+								   <h6>Personalizable</h6>	
+									<div class="contenido-personalizable">										
+										<h7>Tipo de ancheta:</h7>
+										<select name="select" id="select-tipo-ancheta" onclick="accionSelect();" >
+											<option value="1">dulce</option>
+											<option value="2">dulce y licor</option>
+											<option value="3">saludable</option>
+										</select>	
+										  <h7>Descripción:</h7>										 
+										  <input onclick="accionDescripcion();" type="descripcion" id="input-descripcion" name="descripcion" placeholder="Me gustaria que tuviera..">
+									</div>
 							   </div>
 							   <div class="tarjeta-info orden">
-								   <h4 class="h4-orden">Orden</h4> 
-								   <button>comprar</button>
-								   <select>1</select>						
+								   <h4 class="h4-orden">Orden</h4> 								 
+								   <div class="cantidad-unidades">	
+									<button class="btn-comprar">comprar</button>	
+									<span class="span-cantidad">
+										<button id="disminuir" class="botones-unidades disminuir" onclick="disminuir()">-</button>
+										<input type="text" class="cantidad" value="1">
+										<button id="aumentar" class="botones-unidades" onclick="aumentar()">+</button>																															
+									</span>									
+										
+								   </div>					
 							   </div>
 					   </div>
 				   </div>	

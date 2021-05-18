@@ -102,7 +102,7 @@ function accionDescripcion(){
   event.stopPropagation();
 }
 /*funcion coiprar en la tarjeta de  Ordenar*/
-document.getElementById("btn-comprar").addEventListener("click", comprarProducto);
+document.getElementsByClassName("btn-comprar").addEventListener("click", comprarProducto);
 
 var URL_orden = window.location;
 var producto = "ANCHETAS";
@@ -125,6 +125,22 @@ function comprarProducto(){
     
   }
 }
+/*cantidad de unidades  orden aumentar disminuir*/
+var inicio = 1; //se inicializa una variable en 0
+var cantidad; 
+function aumentar(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+  event.stopPropagation();
+   cantidad = document.getElementsByClassName("cantidad").value = ++inicio; //se obtiene el valor del input, y se incrementa en 1 el valor que tenga.
+}
+
+function disminuir(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
+  event.stopPropagation();
+  if(inicio > 1){
+    cantidad = document.getElementsByClassName("cantidad").value = --inicio; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+  }
+    
+}
+
 
 
 

@@ -146,9 +146,13 @@
   height: 10px;
   max-height: 420px;  
 }     
-.contenido img{     
-  float:left;     
-  margin-left:-25px;  
+.contenido img{    
+  width: 55%;
+  float: left; 
+  padding-top: 45px;   
+  display: flex;  
+  vertical-align: middle;
+  margin-left:-60px;   
 
 }   
 .contenido h6{
@@ -217,6 +221,60 @@ input[type=descripcion]  {
   height: 85px;
   max-height: 85px;
 }
+.catidad-unidades{
+  text-align: right;
+  display: flex;
+  flex-flow: row;
+
+}
+.btn-comprar{
+  text-decoration: none;
+  transition: all 400ms;
+  border-radius: 4px;
+  padding: 0px 5px 0px 5px;
+  border: solid 1px rgb(189, 189, 189);
+  text-decoration: none;
+  outline-color: none;
+  outline: none;    
+}
+.btn-comprar:focus {outline: none;}
+
+.btn-comprar:hover{   
+  background-color: #00E676;
+  background-image: linear-gradient(to right, #00E676 , #02e3f3);
+}
+.botones-unidades{    
+  transition: all 400ms;
+  border-radius: 50%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 7px;
+  padding-left: 7px;
+  border: solid 1px rgb(189, 189, 189);
+  text-decoration: none;
+  cursor: pointer;  
+}
+.botones-unidades:focus{ outline: none;  }
+
+
+.botones-unidades:hover{  
+  background-color: #f7927e;
+  background-image: linear-gradient(to left, #F5745A , #fd04dc);
+}
+.disminuir{
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.cantidad{
+  border-radius: 5px;
+  width: 20px;
+  border: solid 1px rgb(189, 189, 189);
+  text-align: center;
+}
+.cantidad:focus{ outline: none;  }
+.span-cantidad{
+  float: right;
+}
 
 /*//////////////////////////////////MOVIL///////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////////////MOVIL//////////////////////////////////////////////////////////////////////////////*/
@@ -233,4 +291,13 @@ input[type=descripcion]  {
   .swiper-button-prev::after{
     display: none;
   }
+  .contenido img{    
+    width: 65%;
+    float: left; 
+    padding-top: 40px;   
+    display: flex;  
+    vertical-align: middle;
+    margin-left:-60px;   
+  
+  }   
 }
