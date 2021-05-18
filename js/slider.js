@@ -91,46 +91,54 @@ function desplegarItems(){
       tarjeta.classList.toggle("aparecer-contenedor");           
   });
 }
-/* llenar formulario contenido */
-var select_tipo_ancheta ;
-var selected, descripcion;
-function accionSelect(){  
-  event.stopPropagation(); 
-}
-var input_descripcion;
-function accionDescripcion(){
-  event.stopPropagation();
-}
-/*funcion coiprar en la tarjeta de  Ordenar*/
-document.getElementsByClassName("btn-comprar").addEventListener("click", comprarProducto);
 
-var URL_orden = window.location;
-var producto = "ANCHETAS";
-function comprarProducto(){
-  
-  event.stopPropagation();
-  
-  if(confirm("¿Esta seguro de realizar esta compra?") ){
-    alert("Su pedido sera enviado al Whatsapp del vendedor");
-    //recuperacion de los datos del contenido, tipo de ancheta selector y input description
-    select_tipo_ancheta = document.getElementById("select-tipo-ancheta");
-    selected = select_tipo_ancheta.options[select_tipo_ancheta.selectedIndex].text;
-
-    input_descripcion = document.getElementById("input-descripcion");
-    descripcion = input_descripcion.value;
-    // implemetar enlace     
-    var cadenaURL = "https://wa.me/573202486769?text="+producto+":"+selected+"%20"+"DESCRIPCION: "+descripcion;
-    URL_orden =  window.location= cadenaURL;
-  }else{
-    
-  }
-}
+/* Seleccionar variantes de producto detener propagacion*/
+var variantes_productos = document.querySelectorAll(".variantes-producto");
+variantes_productos.forEach( (variante, index) => {  
+  variante.addEventListener("click", function(){  
+    event.stopPropagation();  
+  });
+});
+/* Seleccionar descripciones  de productos detener propagacion*/
+var descripcion_productos = document.querySelectorAll(".descripcion-productos");
+descripcion_productos.forEach( (descripcion, index) => {  
+  descripcion.addEventListener("click", function(){  
+    event.stopPropagation(); 
+  });
+});
+/* Seleccionar boton disminuir  de productos detener propagacion*/
+var arreglo_cantidad = [1,1,1,1,1];//se inicializa una variables en 1
+var disminuir_productos = document.querySelectorAll(".disminuir-productos");
+disminuir_productos.forEach( (disminuir, index) => {  
+  disminuir.addEventListener("click", function(){  
+    event.stopPropagation(); 
+    if(arreglo_cantidad[index] > 1){
+      arreglo_cantidad[index] = cantidad_productos[index].value = --arreglo_cantidad[index]; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+    }    
+  });
+});
+/* Seleccionar boton aumentar  de productos detener propagacion*/
+var aumentar_productos = document.querySelectorAll(".aumentar-productos");
+aumentar_productos.forEach( (aumentar, index) => {  
+  aumentar.addEventListener("click", function(){  
+    event.stopPropagation(); 
+    arreglo_cantidad[index] = cantidad_productos[index].value = ++arreglo_cantidad[index]; //se obtiene el valor del input, y se incrementa en 1 el valor que tenga.
+  });
+});
+/* Seleccionar input cantidad  de productos detener propagacion*/
+var cantidad_productos = document.querySelectorAll(".cantidad-producto");
+cantidad_productos.forEach( (cantidad, index) => {  
+  cantidad.addEventListener("click", function(){  
+    event.stopPropagation(); 
+  });
+});
 /*cantidad de unidades  orden aumentar disminuir*/
+/*
 var inicio = 1; //se inicializa una variable en 0
 var cantidad; 
 function aumentar(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
   event.stopPropagation();
-   cantidad = document.getElementsByClassName("cantidad").value = ++inicio; //se obtiene el valor del input, y se incrementa en 1 el valor que tenga.
+   cantidad = cantidad_productos.value = ++inicio; //se obtiene el valor del input, y se incrementa en 1 el valor que tenga.
 }
 
 function disminuir(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
@@ -140,19 +148,89 @@ function disminuir(){ // se crean la funcion y se agrega al evento onclick en en
   }
     
 }
+*/
+/* comprar para los diferentes producotos*/
+var botones_comprar = document.querySelectorAll(".btn-comprar");
+var titulos_productos = document.querySelectorAll(".titulo-producto");
+var precios_productos = document.querySelectorAll(".precios-productos");
+var titulo_producto_vender;
+var variante_selecionada_producto_vender;
+var precio_producto_vender;
+var descripcion_producto_vender;
+var TOTAL_PAGAR_producto_vender;
+//variables para crear URL y enviar pedido a Whatsapp
+var numero_telefono = 573202486769;
+var URL_orden = window.location;
+var cadenaURL = "";
+botones_comprar.forEach( (boton, index) => {  
+  boton.addEventListener("click", function(){  
+      //enviamos el pedido a whatsap
+  
+  if(confirm("¿Esta seguro de realizar esta compra?") ){
+    //el usuario acepto hacer la compra, recuperamos los datos de su pedido
+    alert("Su pedido sera enviado al Whatsapp del vendedor");
+    if(index == 0){      
+      titulo_producto_vender = titulos_productos[0].innerHTML;     
+      variante_selecionada_producto_vender = variantes_productos[index].options[variantes_productos[index].selectedIndex].text;          
+      precio_producto_vender = variantes_productos[0].options[variantes_productos[0].selectedIndex].value;           
+      descripcion_producto_vender = descripcion_productos[0].value;      
+      cantidad_producto_vender = arreglo_cantidad[index];
+      TOTAL_PAGAR_producto_vender = (arreglo_cantidad[index] * precio_producto_vender );
+      /*
+      alert(titulo_producto_vender);
+      alert(variante_selecionada_producto_vender);
+      alert(precio_producto_vender);
+      alert(descripcion_producto_vender);
+      alert(cantidad_producto_vender);
+      alert(TOTAL_PAGAR_producto_vender);
+      */
+    }
+    if(index == 1){   
+      titulo_producto_vender = titulos_productos[1].innerHTML;     
+      variante_selecionada_producto_vender = variantes_productos[index].options[variantes_productos[index].selectedIndex].text;            
+      precio_producto_vender = variantes_productos[1].options[variantes_productos[1].selectedIndex].value;    
+      descripcion_producto_vender = descripcion_productos[1].value;      
+      cantidad_producto_vender = arreglo_cantidad[index];
+      TOTAL_PAGAR_producto_vender = (arreglo_cantidad[index] * precio_producto_vender );              
+    }
+    if(index == 2){
+      titulo_producto_vender = titulos_productos[2].innerHTML;      
+      variante_selecionada_producto_vender = variantes_productos[index].options[variantes_productos[index].selectedIndex].text;           
+      precio_producto_vender = variantes_productos[2].options[variantes_productos[2].selectedIndex].value;   
+      descripcion_producto_vender = descripcion_productos[2].value;       
+      cantidad_producto_vender = arreglo_cantidad[index];
+      TOTAL_PAGAR_producto_vender = (arreglo_cantidad[index] * precio_producto_vender );            
+    }
+    if(index == 3){
+      titulo_producto_vender = titulos_productos[3].innerHTML;     
+      variante_selecionada_producto_vender = variantes_productos[index].options[variantes_productos[index].selectedIndex].text;            
+      precio_producto_vender = variantes_productos[3].options[variantes_productos[3].selectedIndex].value;    
+      descripcion_producto_vender = descripcion_productos[3].value;        
+      cantidad_producto_vender = arreglo_cantidad[index];
+      TOTAL_PAGAR_producto_vender = (arreglo_cantidad[index] * precio_producto_vender );           
+    }
+    if(index == 4){
+      titulo_producto_vender = titulos_productos[4].innerHTML;       
+      variante_selecionada_producto_vender = variantes_productos[index].options[variantes_productos[index].selectedIndex].text;          
+      precio_producto_vender = variantes_productos[4].options[variantes_productos[4].selectedIndex].value;  
+      descripcion_producto_vender = descripcion_productos[4].value;          
+      cantidad_producto_vender = arreglo_cantidad[index];
+      TOTAL_PAGAR_producto_vender = (arreglo_cantidad[index] * precio_producto_vender );         
+    }
+    ///se crea el enlace y se envia al numero designado 
+    alert(titulo_producto_vender);
+    alert(variante_selecionada_producto_vender);
+    alert(precio_producto_vender);
+    alert(descripcion_producto_vender);
+    alert(cantidad_producto_vender);
+    alert(TOTAL_PAGAR_producto_vender);
+    /*ANCHETAS:dulce y licor PRECIO:$60000 DESCRIPCION:quiero que diga te amo ma CANTIDAD:2 TOTAL A PAGAR:$120000    ->>Pendiente de envio comprobante de pago<<- */
+    cadenaURL = "https://wa.me/"+numero_telefono+"?text="+titulo_producto_vender+":"+variante_selecionada_producto_vender+"%20PRECIO:$ "+precio_producto_vender+"%20DESCRIPCIÓN:"+
+    descripcion_producto_vender+"%20CANTIDAD:"+cantidad_producto_vender+"%20TOTAL%20A%20PAGAR>>$ "+TOTAL_PAGAR_producto_vender;
+    URL_orden =  window.location= cadenaURL;    
+  }else{
+    //el usuario no quiere hacer aun  la compra
+  }    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  });
+});

@@ -82,8 +82,7 @@
 							</ul>
 						</div>
 					</nav>	
-					-->
-					
+					-->					
 					<div  class="container-logo-title">		
 						<div class="contenedor-img">
 							<img  id="zumbido" onClick="buzzing()" class="img-logo animate__animated animate__swing animate__normal" src="logo.png">
@@ -123,7 +122,7 @@
 
 			<div class="cards-container" >
 				<figure class="figure-container">
-					<h1 class="entrar-detalles">Anchetas</h1>	
+					<h1 class="entrar-detalles titulo-producto">Anchetas</h1>	
 															
 					<!-- contenedor de  los items del menu-->
 					<div class="div-figure" >							
@@ -146,11 +145,11 @@
 							  <div class="swiper-wrapper">
 
 								<div class="swiper-slide">
-									<h5>Dulces $40,000</h5>
+									<h5>Dulces $50,000</h5>
 									<img src="imgs/anchetas_dulces.jpg" >	
 								</div>
 								<div class="swiper-slide">
-									<h5>Dulces y licores $40,000</h5>
+									<h5>Dulces y licores $60,000</h5>
 									<img src="imgs/anchetas_dulces_licor.png" >	
 								</div>
 								<div class="swiper-slide">
@@ -181,13 +180,13 @@
 									<h6>Personalizable</h6>	
 									<div class="contenido-personalizable">										
 										<h7>Tipo de ancheta:</h7>
-										<select name="select" id="select-tipo-ancheta" onclick="accionSelect();" >
-											<option value="1">dulce</option>
-											<option value="2">dulce y licor</option>
-											<option value="3">saludable</option>
+										<select name="select" class="variantes-producto"   >
+											<option  value="50000">dulce</option>
+											<option  value="60000">dulce y licor</option>
+											<option  value="40000">saludable</option>
 										</select>	
 										  <h7>Descripción:</h7>										 
-										  <input onclick="accionDescripcion();" type="descripcion" id="input-descripcion" name="descripcion" placeholder="Me gustaria que tuviera..">
+										  <textarea   type="descripcion" name="descripcion" rows="3" cols="10"class="descripcion-productos" name="descripcion"  placeholder="Escribe aquí tu descripción.."></textarea>									 										  
 									</div>
 								</div>
 								<div class="tarjeta-info orden">
@@ -195,9 +194,9 @@
 									<div class="cantidad-unidades">	
 										<button class="btn-comprar">comprar</button>	
 										<span class="span-cantidad">
-											<button id="disminuir" class="botones-unidades disminuir" onclick="disminuir()">-</button>
-											<input type="text" class="cantidad" value="1">
-											<button id="aumentar" class="botones-unidades" onclick="aumentar()">+</button>																															
+											<button  class="botones-unidades disminuir-productos" >-</button>
+											<input type="text" class="cantidad-producto" value="1">
+											<button  class="botones-unidades aumentar-productos ">+</button>																															
 										</span>																				
 									</div>						
 								</div>
@@ -206,7 +205,7 @@
 				</figure>	
 
 				<figure class="figure-container">
-					<h1 class="entrar-detalles">Meriendas</h1>
+					<h1 class="entrar-detalles titulo-producto">Meriendas</h1>
 					<div class="div-figure" >
 						<img class="entrar-detalles" src="imgs/regalo.png" >						
 						<p class="sona0">aqui tenemos postres Yogurt y ensaladas de frutas
@@ -273,13 +272,14 @@
 								   <h6>Personalizable</h6>	
 									<div class="contenido-personalizable">										
 										<h7>Tipo de ancheta:</h7>
-										<select name="select" id="select-tipo-ancheta" onclick="accionSelect();" >
-											<option value="1">dulce</option>
-											<option value="2">dulce y licor</option>
-											<option value="3">saludable</option>
+										<select name="select" class="variantes-producto"  >
+											<option value="1">postres</option>
+											<option value="2">cafe</option>
+											<option value="3">yogurt</option>
+											<option value="4">cubanos</option>
 										</select>	
 										  <h7>Descripción:</h7>										 
-										  <input onclick="accionDescripcion();" type="descripcion" id="input-descripcion" name="descripcion" placeholder="Me gustaria que tuviera..">
+										  <textarea   type="descripcion" name="descripcion" rows="3" cols="10" class="descripcion-productos" name="descripcion"  placeholder="Escribe aquí tu descripción.."></textarea>									 										  
 									</div>
 							   </div>
 							   <div class="tarjeta-info orden">
@@ -287,9 +287,9 @@
 								   <div class="cantidad-unidades">	
 									<button class="btn-comprar">comprar</button>	
 									<span class="span-cantidad">
-										<button id="disminuir" class="botones-unidades disminuir" onclick="disminuir()">-</button>
-										<input type="text" class="cantidad"  value="1">
-										<button id="aumentar" class="botones-unidades" onclick="aumentar()">+</button>																															
+										<button  class="botones-unidades disminuir-productos" >-</button>
+										<input type="text" class="cantidad-producto"  value="1">
+										<button  class="botones-unidades aumentar-productos ">+</button>																															
 									</span>																				
 								</div>							
 							   </div>
@@ -298,7 +298,7 @@
 				</figure>	
 				
 				<figure class="figure-container">
-					<h1 class="entrar-detalles">Desayunos sorpresa</h1>
+					<h1 class="entrar-detalles titulo-producto">Desayunos sorpresa</h1>
 					<div   class="sona0  div-figure"  >					
 						<img class="entrar-detalles" src="imgs/regalo.png" alt="">					
 					<p>los desayunos sorpresa mas ricos y especiales estan aqui para
@@ -366,13 +366,15 @@
 								   <h6>Personalizable</h6>	
 									<div class="contenido-personalizable">										
 										<h7>Tipo de ancheta:</h7>
-										<select name="select" id="select-tipo-ancheta" onclick="accionSelect();" >
-											<option value="1">dulce</option>
-											<option value="2">dulce y licor</option>
-											<option value="3">saludable</option>
+										<select name="select" class="variantes-producto"  >
+											<option value="10000">desayuno1</option>
+											<option value="2000">desayuno2</option>
+											<option value="3000">desayuno3</option>
+											<option value="40000">desayuno4</option>
+											<option value="50000">desayuno5</option>
 										</select>	
 										  <h7>Descripción:</h7>										 
-										  <input onclick="accionDescripcion();" type="descripcion" id="input-descripcion" name="descripcion" placeholder="Me gustaria que tuviera..">
+										  <textarea   type="descripcion" name="descripcion" rows="3" cols="10" class="descripcion-productos" name="descripcion"  placeholder="Escribe aquí tu descripción.."></textarea>									 										  
 									</div>
 							   </div>
 							   <div class="tarjeta-info orden">
@@ -380,9 +382,9 @@
 								   <div class="cantidad-unidades">	
 									<button class="btn-comprar">comprar</button>	
 									<span class="span-cantidad">
-										<button id="disminuir" class="botones-unidades disminuir" onclick="disminuir()">-</button>
-										<input type="text" class="cantidad" value="1">
-										<button id="aumentar" class="botones-unidades" onclick="aumentar()">+</button>																															
+										<button  class="botones-unidades disminuir-productos" >-</button>
+										<input type="text" class="cantidad-producto" value="1">
+										<button  class="botones-unidades aumentar-productos">+</button>																															
 									</span>																				
 								</div>								
 							   </div>
@@ -391,7 +393,7 @@
 				</figure>	
 
 				<figure class="figure-container">
-					<h1 class="entrar-detalles">Arreglos florales</h1>
+					<h1 class="entrar-detalles titulo-producto">Arreglos florales</h1>
 					<div class="sona0 div-figure" >
 						<img class="entrar-detalles" src="imgs/regalo.png" >					
 					<p>1.<br>
@@ -446,14 +448,14 @@
 								   <h4>Contenido</h4> 						
 								   <h6>Personalizable</h6>	
 								   <div class="contenido-personalizable">										
-									   <h7>Tipo de ancheta:</h7>
-									   <select name="select" id="select-tipo-ancheta" onclick="accionSelect();" >
-										   <option value="1">dulce</option>
-										   <option value="2">dulce y licor</option>
-										   <option value="3">saludable</option>
+									   <h7>Arreglos florales:</h7>
+									   <select name="select" class="variantes-producto"  >
+										   <option value="1">arreglo1</option>
+										   <option value="2">arreglo2</option>
+										   <option value="3">arreglo3</option>
 									   </select>	
 										 <h7>Descripción:</h7>										 
-										 <input onclick="accionDescripcion();" type="descripcion" id="input-descripcion" name="descripcion" placeholder="Me gustaria que tuviera..">
+										 <textarea   type="descripcion" name="descripcion" rows="3" cols="10" class="descripcion-productos" name="descripcion"  placeholder="Escribe aquí tu descripción.."></textarea>									 										  
 								   </div>
 							   </div>
 							   <div class="tarjeta-info orden">
@@ -461,9 +463,9 @@
 								   <div class="cantidad-unidades">	
 									<button class="btn-comprar">comprar</button>	
 									<span class="span-cantidad">
-										<button id="disminuir" class="botones-unidades disminuir" onclick="disminuir()">-</button>
-										<input type="text" class="cantidad" value="1">
-										<button id="aumentar" class="botones-unidades" onclick="aumentar()">+</button>																															
+										<button  class="botones-unidades disminuir-productos" >-</button>
+										<input type="text" class="cantidad-producto" value="1">
+										<button  class="botones-unidades aumentar-productos ">+</button>																															
 									</span>																				
 								</div>							
 							   </div>
@@ -474,7 +476,7 @@
 
 
 				<figure class="figure-container">
-					<h1 class="entrar-detalles">Bandejas</h1>	
+					<h1 class="entrar-detalles titulo-producto">Bandejas</h1>	
 					<div class="sona0 div-figure" >
 						<img class="entrar-detalles" src="imgs/regalo.png" >					
 					<p>1.<br>
@@ -534,14 +536,14 @@
 								   <h4>Contenido</h4> 						
 								   <h6>Personalizable</h6>	
 									<div class="contenido-personalizable">										
-										<h7>Tipo de ancheta:</h7>
-										<select name="select" id="select-tipo-ancheta" onclick="accionSelect();" >
-											<option value="1">dulce</option>
-											<option value="2">dulce y licor</option>
-											<option value="3">saludable</option>
+										<h7>Tipo Bandeja:</h7>
+										<select name="select" class="variantes-producto"  >
+											<option value="1">bandeja1</option>
+											<option value="2">bandeja2</option>
+											<option value="3">bandeja3</option>
 										</select>	
-										  <h7>Descripción:</h7>										 
-										  <input onclick="accionDescripcion();" type="descripcion" id="input-descripcion" name="descripcion" placeholder="Me gustaria que tuviera..">
+										  <h7>Descripción:</h7>	
+										  <textarea   type="descripcion" name="descripcion" rows="3" cols="10" class="descripcion-productos" name="descripcion"  placeholder="Escribe aquí tu descripción.."></textarea>									 										  
 									</div>
 							   </div>
 							   <div class="tarjeta-info orden">
@@ -549,9 +551,9 @@
 								   <div class="cantidad-unidades">	
 									<button class="btn-comprar">comprar</button>	
 									<span class="span-cantidad">
-										<button id="disminuir" class="botones-unidades disminuir" onclick="disminuir()">-</button>
-										<input type="text" class="cantidad" value="1">
-										<button id="aumentar" class="botones-unidades" onclick="aumentar()">+</button>																															
+										<button  class="botones-unidades disminuir-productos" >-</button>
+										<input type="text" class="cantidad-producto" value="1">
+										<button  class="botones-unidades aumentar-productos ">+</button>																															
 									</span>									
 										
 								   </div>					

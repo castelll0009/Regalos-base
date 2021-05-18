@@ -265,13 +265,13 @@ input[type=descripcion]  {
   padding-right: 8px;
   padding-left: 8px;
 }
-.cantidad{
+.cantidad-producto{
   border-radius: 5px;
   width: 20px;
   border: solid 1px rgb(189, 189, 189);
   text-align: center;
 }
-.cantidad:focus{ outline: none;  }
+.cantidad-producto:focus{ outline: none;  }
 .span-cantidad{
   float: right;
 }
