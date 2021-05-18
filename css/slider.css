@@ -160,12 +160,18 @@
   top: 0;
   right: 0;
 }   
+.contenido-personalizable{  
+  text-align: right;
+  display: flex;
+  flex-flow: column;
   
+}
+
 .contenido p{                 
   /*opacity: 1; 
   display: block;       */
   opacity: 0; 
-  display: none;         
+  display: none;     
      
 }
 .orden{         
@@ -178,7 +184,8 @@
 }   
 .orden h4{           
   padding-bottom:  8px;
-  border-bottom: solid 1px black;     
+  /*border-style: dotted;*/
+  border-bottom:  dotted 3px black;     
 }
 .orden button{  
   margin-bottom:  10px;
@@ -193,6 +200,14 @@
   border: solid 1px grey;        
   opacity: 1;                
   display: block; 
+}
+input[type=descripcion]  {
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;  
 }
 .desplegar-tarjeta-info{
   height: 420px;
