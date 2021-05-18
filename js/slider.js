@@ -170,23 +170,15 @@ botones_comprar.forEach( (boton, index) => {
     //el usuario acepto hacer la compra, recuperamos los datos de su pedido
     alert("Su pedido sera enviado al Whatsapp del vendedor");
     if(index == 0){      
-      titulo_producto_vender = titulos_productos[0].innerHTML;     
+      titulo_producto_vender = titulos_productos[0].innerHTML.toUpperCase();     
       variante_selecionada_producto_vender = variantes_productos[index].options[variantes_productos[index].selectedIndex].text;          
       precio_producto_vender = variantes_productos[0].options[variantes_productos[0].selectedIndex].value;           
       descripcion_producto_vender = descripcion_productos[0].value;      
       cantidad_producto_vender = arreglo_cantidad[index];
-      TOTAL_PAGAR_producto_vender = (arreglo_cantidad[index] * precio_producto_vender );
-      /*
-      alert(titulo_producto_vender);
-      alert(variante_selecionada_producto_vender);
-      alert(precio_producto_vender);
-      alert(descripcion_producto_vender);
-      alert(cantidad_producto_vender);
-      alert(TOTAL_PAGAR_producto_vender);
-      */
+      TOTAL_PAGAR_producto_vender = (arreglo_cantidad[index] * precio_producto_vender );    
     }
     if(index == 1){   
-      titulo_producto_vender = titulos_productos[1].innerHTML;     
+      titulo_producto_vender = titulos_productos[1].innerHTML.toUpperCase();     
       variante_selecionada_producto_vender = variantes_productos[index].options[variantes_productos[index].selectedIndex].text;            
       precio_producto_vender = variantes_productos[1].options[variantes_productos[1].selectedIndex].value;    
       descripcion_producto_vender = descripcion_productos[1].value;      
@@ -194,7 +186,7 @@ botones_comprar.forEach( (boton, index) => {
       TOTAL_PAGAR_producto_vender = (arreglo_cantidad[index] * precio_producto_vender );              
     }
     if(index == 2){
-      titulo_producto_vender = titulos_productos[2].innerHTML;      
+      titulo_producto_vender = titulos_productos[2].innerHTML.toUpperCase();      
       variante_selecionada_producto_vender = variantes_productos[index].options[variantes_productos[index].selectedIndex].text;           
       precio_producto_vender = variantes_productos[2].options[variantes_productos[2].selectedIndex].value;   
       descripcion_producto_vender = descripcion_productos[2].value;       
@@ -202,7 +194,7 @@ botones_comprar.forEach( (boton, index) => {
       TOTAL_PAGAR_producto_vender = (arreglo_cantidad[index] * precio_producto_vender );            
     }
     if(index == 3){
-      titulo_producto_vender = titulos_productos[3].innerHTML;     
+      titulo_producto_vender = titulos_productos[3].innerHTML.toUpperCase();     
       variante_selecionada_producto_vender = variantes_productos[index].options[variantes_productos[index].selectedIndex].text;            
       precio_producto_vender = variantes_productos[3].options[variantes_productos[3].selectedIndex].value;    
       descripcion_producto_vender = descripcion_productos[3].value;        
@@ -210,7 +202,7 @@ botones_comprar.forEach( (boton, index) => {
       TOTAL_PAGAR_producto_vender = (arreglo_cantidad[index] * precio_producto_vender );           
     }
     if(index == 4){
-      titulo_producto_vender = titulos_productos[4].innerHTML;       
+      titulo_producto_vender = titulos_productos[4].innerHTML.toUpperCase();       
       variante_selecionada_producto_vender = variantes_productos[index].options[variantes_productos[index].selectedIndex].text;          
       precio_producto_vender = variantes_productos[4].options[variantes_productos[4].selectedIndex].value;  
       descripcion_producto_vender = descripcion_productos[4].value;          
@@ -218,15 +210,17 @@ botones_comprar.forEach( (boton, index) => {
       TOTAL_PAGAR_producto_vender = (arreglo_cantidad[index] * precio_producto_vender );         
     }
     ///se crea el enlace y se envia al numero designado 
+    /*
     alert(titulo_producto_vender);
     alert(variante_selecionada_producto_vender);
     alert(precio_producto_vender);
     alert(descripcion_producto_vender);
     alert(cantidad_producto_vender);
     alert(TOTAL_PAGAR_producto_vender);
+    */
     /*ANCHETAS:dulce y licor PRECIO:$60000 DESCRIPCION:quiero que diga te amo ma CANTIDAD:2 TOTAL A PAGAR:$120000    ->>Pendiente de envio comprobante de pago<<- */
-    cadenaURL = "https://wa.me/"+numero_telefono+"?text="+titulo_producto_vender+":"+variante_selecionada_producto_vender+"%20PRECIO:$ "+precio_producto_vender+"%20DESCRIPCIÓN:"+
-    descripcion_producto_vender+"%20CANTIDAD:"+cantidad_producto_vender+"%20TOTAL%20A%20PAGAR>>$ "+TOTAL_PAGAR_producto_vender;
+    cadenaURL = "https://wa.me/"+numero_telefono+"?text=💝💝💝🦄🦄🦄UNI-STORE (PEDIDO ONLINE)🦄🦄🦄💝💝💝%0A%0A"+titulo_producto_vender+": "+variante_selecionada_producto_vender+"       %20PRECIO:$ "+precio_producto_vender+"       %20DESCRIPCIÓN:"+
+    descripcion_producto_vender+"       %20CANTIDAD: "+cantidad_producto_vender+"          %20TOTAL%20A%20PAGAR>>$ "+TOTAL_PAGAR_producto_vender+"%0A%0A->>Pendiente de envio comprobante de pago<<-";
     URL_orden =  window.location= cadenaURL;    
   }else{
     //el usuario no quiere hacer aun  la compra
