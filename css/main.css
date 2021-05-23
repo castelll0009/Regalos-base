@@ -188,6 +188,7 @@ figure{
 	max-height: 600px;	
 	margin: 10px;
 	background-color: rgb(219, 216, 216);
+	background-color: #F5F3E9;
 	border-radius: 20px;
 	border-width: 200px;
 	padding: 10px;
@@ -273,7 +274,8 @@ figure img{
 	padding-top: 15px;
 	padding-bottom: 0px;
 	margin-left: -10px;		
-	background-color: rgb(219, 216, 216);		
+	background-color: rgb(219, 216, 216);	
+	background-color: #F5F3E9;		
 	border-radius: 20px;	
 	z-index: 0;
 }
@@ -302,10 +304,14 @@ span{
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 700px){	
+	.cards-container{
+		margin: 50px;
+	}
 	.figure-container{	
-		min-width: 420px;	
-		min-height: max-content;		
+		min-width: 350px;	
+		min-height: max-content;	
 		max-height: 710px;	
+		max-height: 500px;	
 		overflow: hidden;
 		position: relative;			
 	}
@@ -324,15 +330,13 @@ span{
 		padding: 10px;
 		padding-top: 15px;
 		padding-bottom: 0px;
-		margin-left: -10px;		
-		background-color: rgb(219, 216, 216);		
+		margin-left: -10px;				
 		border-radius: 20px;	
 		z-index: 0;				
 	}
 	
 	
-	.div-figure:hover{				
-		background-color: rgb(219, 216, 216);
+	.div-figure:hover{						
 		margin-top: -15px;
 		padding: 10px;
 		padding-top: 15px;
