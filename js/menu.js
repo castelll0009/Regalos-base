@@ -48,3 +48,13 @@ $(document).ready(function() {
 ///////////////////////////////////////////////////////////////////
 
 });
+/*
+///funcion active para las imagenes  iconos del div figure ANCHETAS , REGALOS, MERIENDAS etc
+var accion_iconos = document.querySelectorAll(".accion-icono");
+
+accion_iconos.forEach( (icon,index) => {  
+  icon.addEventListener("click", function(){      
+	  	icon.setAttribute("src", "../imgs/anchetas-action.png");
+	});
+});
+*/

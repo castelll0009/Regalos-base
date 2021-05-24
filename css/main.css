@@ -2,7 +2,7 @@ body{
 	font-family: 'Kaushan Script', cursive;
 	font-family: 'Lato', sans-serif;
 	font-family: 'Zilla Slab', serif;
-	-webkit-user-select: none;	
+	-webkit-user-select: none;		
 }
 main{				
 	padding: 10px;				
@@ -203,8 +203,9 @@ figure h1{
 }
 
 figure img{	
-	width: 50%;
+	width: 50%;	
 }
+
 #iframe-map{		
 	width : 600px;
 	height : 500px;
@@ -296,6 +297,12 @@ figure img{
 }	
 span{
 	font-size: 16px;
+}
+.accion-icono:active{
+	border-radius: 150px;
+	border: 15px solid #C3CBFF;
+	width: 50%;
+	pointer-events: none;
 }
 
 /*///////////////////////////////////////////////////////////////////*/
