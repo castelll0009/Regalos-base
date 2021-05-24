@@ -307,6 +307,11 @@ span{
 	border-radius: 150px;
 	border: 15px solid #C3CBFF;
 	width: 50%;	
+	-webkit-user-drag: none;	
+	-moz-user-select: none; 
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none; 
 }
 #beepc{			
 	color: #FB009A;		
