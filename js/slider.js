@@ -47,8 +47,7 @@ var contenedor_swiper_tarjetas = document.querySelectorAll(".contenedor-swiper-t
 var entrar_detalles = document.querySelectorAll(".entrar-detalles");
 
 entrar_detalles.forEach( (detalle,index) => {  
-  detalle.addEventListener("click", function(){          
-
+  detalle.addEventListener("mouseup", function(){                        
      if(index == 0 || index== 1 )//En este caso alertaremos el texto del cliqueado          
       {                        
             div_figures[0].classList.toggle("desaparecer-contenedor");
@@ -79,6 +78,7 @@ entrar_detalles.forEach( (detalle,index) => {
 
   });
 });
+
 
 //desplegar todas los menus 
 

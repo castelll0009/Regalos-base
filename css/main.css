@@ -204,6 +204,7 @@ figure h1{
 
 figure img{	
 	width: 50%;	
+	-webkit-user-drag: none;
 }
 
 #iframe-map{		
@@ -301,8 +302,7 @@ span{
 .accion-icono:active{
 	border-radius: 150px;
 	border: 15px solid #C3CBFF;
-	width: 50%;
-	pointer-events: none;
+	width: 50%;	
 }
 #beepc{			
 	color: #FB009A;		
