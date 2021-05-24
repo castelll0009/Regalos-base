@@ -3,15 +3,20 @@ var btn = document.getElementById("zumbido");
 var beepc = document.querySelector("#beepc");
 var btn_detalles = document.querySelector("#btn-detalles");
 
+document.getElementById("zumbido").addEventListener("click", function(){  
+	sound.play();	
+});
 
-function buzzing() {					
-	sound.play();			
-}		
-
+var anchoVentana = window.innerWidth;
 var zoom = false;
-function vistaEscritorio(){		
+	
+function vistaEscritorio(){			   
 	if(zoom == false){
-		document.body.style = "zoom: 51%";	
+		if(anchoVentana > 700){
+			document.body.style = "zoom: 70%";	
+		}else{
+			document.body.style = "zoom: 50%";	
+		}		
 		btn_detalles.style ="font-size: 4em; bottom: 95px;";		
 		beepc.style ="font-size: 4em";		
 		zoom = true;

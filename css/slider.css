@@ -181,7 +181,7 @@
 }
 .orden{         
   color: black; 
-  background: #f3f2ec;  
+  background: #fffdf7;  
   z-index: 3;    
   min-height: max-content;
   height: 40px;
@@ -234,6 +234,7 @@ input[type=descripcion]  {
   border-radius: 4px;
   padding: 0px 5px 0px 5px;
   border: solid 1px rgb(189, 189, 189);
+  background-color: white;
   text-decoration: none;
   outline-color: none;
   outline: none;    
@@ -252,6 +253,7 @@ input[type=descripcion]  {
   padding-right: 7px;
   padding-left: 7px;
   border: solid 1px rgb(189, 189, 189);
+  background-color: white;
   text-decoration: none;
   cursor: pointer;  
 }

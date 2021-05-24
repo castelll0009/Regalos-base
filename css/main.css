@@ -304,6 +304,20 @@ span{
 	width: 50%;
 	pointer-events: none;
 }
+#beepc{			
+	color: #FB009A;		
+	font-size: 2em;
+	position: fixed;		
+	bottom: 2px ;	
+	right: 7.5px;
+	opacity: 0.5;		
+	z-index: 30;
+	
+}	
+
+#beepc:active{									
+	opacity: 1;						
+}	
 
 /*///////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////*/
@@ -359,10 +373,6 @@ span{
 		z-index: 2;
 	}
 
-	#beepc{	
-		display: none;				
-	}		
-	
 	
 }
 /*movil///////////////////////////////////////////*/
