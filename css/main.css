@@ -204,8 +204,11 @@ figure h1{
 
 figure img{	
 	width: 50%;	
-	-webkit-user-drag: none;
-	user-select: none;
+	-webkit-user-drag: none;	
+	-moz-user-select: none; 
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none; 
 }
 
 #iframe-map{		
